@@ -1,0 +1,87 @@
+/* セレクター{プロパティ: 値;} */
+/* .g1 {
+  color: red;
+  font-size: 40px;
+  background-color: blue;
+} */
+
+/* よく使うプロパティ */
+
+.g1 {
+    /* フォントサイズ */
+    /* font-size: 16px; */
+    /* デフォルトだよ */
+
+    /* フォント */
+    /* font-family: "Hiragino Maru Gothic ProN"; */
+
+    /* 文字の太さ */
+    /* font-weight: bold; */
+    /* font-weight: normal; */
+
+    /* 文字の間隔 */
+    /* letter-spacing: 10px; */
+
+    /* 文字の色 */
+    /* color: blueviolet; */
+    /* color: rgba(0,0,0, 0.5); */
+    /* カラーコードの知識が少し必要 */
+
+    /* コンテンツの幅 */
+    /* width: 2000px; */
+
+    /* コンテンツの高さ */
+    /* height: 200px; */
+
+    /* コンテンツの背景 */
+    /* background-color: aquamarine; */
+    /* background-image: url("../img/img_sample.JPG"); */
+    /* background-size: cover; */
+    /* background-size: contain; */
+
+    /* 状態変化 */
+    /* display: inline; */
+    /* display: block; */
+    /* display: inline-block; */
+    /* display: flex; */
+
+    /* テキストの位置(横) */
+    /* text-align: center; */
+
+    /* テキストの位置(縦の幅) */
+    /* line-height: 300px; */
+
+    /* リストの点を消す */
+    /* list-style: none; */
+
+    /*  */
+    /* 余白系 */
+    padding: 30px;
+    margin: 100px;
+    border: 3px solid black;
+
+}
+
+
+.groups {
+    /* display: flex; */
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* align-content:stretch; */
+}
+
+.g1,.g2,.g3,.g4,.g5,.g6,.g7{
+    /* width: 200px; */
+    /* height: 300px; */
+}
+
+img{
+    /* width: 100px; */
+}
