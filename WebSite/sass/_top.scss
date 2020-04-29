@@ -1,0 +1,122 @@
+// header
+
+// ロゴとタイトル
+.site-logo {
+  display: flex;
+  //   justify-content: left;
+  align-items: flex-end;
+  padding: 10px;
+  // mediaQuery
+  @include sp(){
+    align-items: center;
+  }
+  a {
+    width: 8%;
+    min-width: 60px;
+    margin: 5px;
+    img {
+      display: block;
+      width: 100%;
+      min-width: 60px;
+    }
+  }
+  .site-ttl {
+    font-size: 28px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  p {
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
+
+// メニュー
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: $mcg;
+  border-top: 2px solid $mcb;
+  border-bottom: 2px solid $mcb;
+  h2 {
+    font-size: 18px;
+    margin: 0 30px;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    li:hover {
+      background-color: $mcb;
+    }
+    //   mq
+    @include sp() {
+      flex-wrap: wrap;
+    }
+    a {
+      font-size: 16px;
+      display: block;
+      color: black;
+      @include blank(5px, 10px);
+    }
+  }
+}
+
+// キャッチコピー
+.catch {
+  display: flex;
+//   width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  //   mq
+  @include sp() {
+    flex-direction: column-reverse;
+  }
+  img {
+    width: 40%;
+    opacity: 85%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    //   mq
+    @include sp() {
+      width: 80%;
+    }
+  }
+  .catch-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 32px;
+      font-family: "Arial black";
+      letter-spacing: 10px;
+      padding: 12px;
+      //   mq
+      @include sp() {
+        font-size: 28px;
+        letter-spacing: 7px;
+      }
+    }
+    p {
+      font-family: "Arial";
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      margin: 5px;
+      @include sp() {
+        //   この親要素からして,2番めのpタグを選択
+        &:nth-of-type(2) {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

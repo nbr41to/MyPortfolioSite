@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      pre {
+        padding: 1em;
+        background-color: #444;
+        color: #fff;
+      }
+      code {
+        font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+      }
+    </style>
+    <h1>HTMLタグの基本形</h1>
+    <pre><code>&lt;要素名 属性名=&quot;属性の値&quot;&gt;タグで囲む内容&lt;/要素名&gt;</code></pre>
+    <p>※属性は半角スペースで何個も繋げられます.</p>
+    <p>また,</p>
+    <pre><code>&lt;要素名 属性名=&quot;属性の値&quot;&gt;</code></pre>
+    <p>のように,閉じタグが必要なく,囲まないで使用する空要素というのもある</p>
+    <p>例：</p>
+    <pre><code>&lt;img&gt;,&lt;hr&gt;,&lt;br&gt;,</code></pre>
+    <h1>よく使う要素(タグ)一覧</h1>
+    <hr />
+    <pre><code>&lt;<span style="color: red;">要素名</span> 属性名=&quot;属性の値&quot;&gt;タグで囲む内容&lt;/<span style="color: red;">要素名</span>&gt;</code></pre>
+    <!-- head内 -->
+    <h2>head内で使用</h2>
+    <hr />
+    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;cssファイルのパス&quot;&gt;</code></pre>
+    <!-- 一般 -->
+    <h2>一般的に使用</h2>
+    <hr />
+    <h1>見出し1</h1>
+    <pre><code>&lt;h1&gt;見出し1&lt;/h1&gt;</code></pre>
+    <h2>見出し2</h2>
+    <pre><code>&lt;h1&gt;見出し2&lt;/h1&gt;</code></pre>
+    <h3>見出し3</h3>
+    <pre><code>&lt;h1&gt;見出し3&lt;/h1&gt;</code></pre>
+    <h4>見出し4</h4>
+    <pre><code>&lt;h1&gt;見出し4&lt;/h1&gt;</code></pre>
+    <h5>見出し5</h5>
+    <pre><code>&lt;h1&gt;見出し5&lt;/h1&gt;</code></pre>
+    <h6>見出し6</h6>
+    <pre><code>&lt;h1&gt;見出し6&lt;/h1&gt;</code></pre>
+    <p>文章を書く段落</p>
+    <pre><code>&lt;p&gt;文章を書く段落&lt;/p&gt;</code></pre>
+    <a href="#">リンクだよ</a>
+    <pre><code>&lt;a href=&quot;リンク先のURLやパス&quot;&gt;リンクだよ&lt;/a&gt;</code></pre>
+    <ul>
+      <li>リスト1</li>
+      <li>リスト2</li>
+      <li>リスト3</li>
+    </ul>
+    <pre><code>&lt;ul&gt;
+      &lt;li&gt;リスト1&lt;/li&gt;
+      &lt;li&gt;リスト2&lt;/li&gt;
+      &lt;li&gt;リスト3&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+    <button>ボタンだよ</button>
+    <p>※ボタンは改行されないので注意</p>
+    <pre><code>&lt;button&gt;ボタンだよ&lt;/button&gt;</code></pre>
+    <!-- ボタンは改行されないので注意 -->
+    <br />
+    <input type="text" value="入力できます" />
+    <pre><code>&lt;input type=&quot;text&quot; value=&quot;入力できます&quot; /&gt;</code></pre>
+    <textarea>長い文章も入力できます</textarea>
+    <pre><code>&lt;textarea&gt;長い文章も入力できます&lt;/textarea&gt;</code></pre>
+    <!-- 囲む用 -->
+    <h2>囲むのに使うやつ</h2>
+    <hr />
+    <div>div</div>
+    <pre><code>&lt;div&gt;div&lt;/div&gt;</code></pre>
+    <header>header</header>
+    <pre><code>&lt;header&gt;header&lt;/header&gt;</code></pre>
+    <main>main</main>
+    <pre><code>&lt;main&gt;main&lt;/main&gt;</code></pre>
+    <footer>footer</footer>
+    <pre><code>&lt;footer&gt;footer&lt;/footer&gt;</code></pre>
+    <section>section</section>
+    <pre><code>&lt;section&gt;section&lt;/section&gt;</code></pre>
+    <!-- 属性 -->
+    <h1>知っておいたほうが良い属性一覧</h1>
+    <hr />
+    <pre><code>&lt;要素名 <span style="color: red;">属性名=&quot;属性の値&quot;</span>&gt;タグで囲む内容&lt;/要素名&gt;</code></pre>
+    <h2>名前をつける</h2>
+    <pre><code>&lt;div id=&quot;付けたい名前&quot;&gt;&lt;/div&gt;</code></pre>
+    <pre><code>&lt;div class=&quot;付けたい名前&quot;&gt;&lt;/div&gt;</code></pre>
+    <p>※idは一回しか使えない,基本はclassを使っておけばOK.</p>
+    <h2>ファイルを拾うパス</h2>
+    <p>リンク先のURLを入力</p>
+    <pre><code>&lt;a href=&quot;リンク先のパス&quot;&gt;&lt;/a&gt;</code></pre>
+    <p>画像を表示するために,画像ファイルがあるパスを入力</p>
+    <pre><code>&lt;img src=&quot;画像のパス&quot; alt=&quot;画像ですよ！&quot;&gt;</code></pre>
+    <p>入力フォームの形や,初期値を設定</p>
+    <pre><code>&lt;input type=&quot;text&quot; value=&quot;入力でます&quot; /&gt;</code></pre>
+    <h2>CSSを適応する</h2>
+    <pre><code>&lt;p style=&quot;color: blue;&quot;&gt;このタグで囲まれた内容に装飾を施す&lt;/p&gt;</code></pre>
+    <p>結果↓</p>
+    <p style="color: blue;">このタグで囲まれた内容に装飾を施す</p>
+    <p>
+      ※連続で書く場合は,style = プロパティ: 値; プロパティ: 値；
+      プロパティ...とつながることができる
+    </p>
+    <hr />
+    <a href="index.html">戻る</a>
+  </body>
+</html>

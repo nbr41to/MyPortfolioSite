@@ -1,0 +1,39 @@
+// Sassファイル→CSSファイル→htmlに読み込ませる
+
+// 変数が使える！
+$mcg: #d8f8be;
+$mcb: #b8bbf6;
+$mcr: #f3c1bb;
+$mco: #f9e4bd;
+$mcy: #f9f7bf;
+
+// mixinが使える！
+@mixin blank($p: 10px, $m: 10px) {
+  // 初期値は10px
+  padding: $p;
+  margin: $m;
+}
+
+// media query 
+@mixin sp {
+  @media screen and(max-width: 600px) {
+    @content;
+  }
+}
+
+// 他のファイルを読み込む
+@import "top";
+@import "section";
+@import "footer";
+
+
+// 何と言っても入れ子構造！！！
+
+* {
+  font-family: "Hiragino Maru Gothic ProN";
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}

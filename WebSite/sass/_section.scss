@@ -1,0 +1,35 @@
+// section
+
+// 全セクション共通
+section {
+  background-color: $mcy;
+  margin: 25px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 20px;
+  .sec-ttl {
+    padding: 5px 10px;
+    background-color: $mcg;
+    border: 1px solid gray;
+    border-radius: 5px;
+    span {
+      margin: 0 5px;
+    }
+    &:hover {
+      background-color: $mcr;
+      span {
+        color: red;
+      }
+    }
+  }
+  .sec-content {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    ul {
+      padding: 10px 20px;
+    }
+  }
+}
